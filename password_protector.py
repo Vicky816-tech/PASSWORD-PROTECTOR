@@ -4,6 +4,9 @@ import os
 import sys
 import hashlib
 import getpass
+
+# Chemin absolu pour importer style.py
+sys.path.append('/data/data/com.termux/files/usr/etc/')
 from style import display_banner
 
 # Configuration
