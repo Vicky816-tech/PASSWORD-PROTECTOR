@@ -9,7 +9,7 @@ def display_banner():
 ╚═════╝ ╚══════╝╚═════╝ ╚══════╝╚══════╝ ╚═════╝
 \033[0m
 \033[1;35m
-          Termux Password Protector v4.2
+          Termux Password Protector v5.0
                Owner: Spoty Mtf
 \033[0m
 \033[1;32m
