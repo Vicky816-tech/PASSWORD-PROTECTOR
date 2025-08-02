@@ -5,6 +5,9 @@ import sys
 import hashlib
 import termios
 import tty
+
+# Configuration des chemins
+sys.path.insert(0, '/data/data/com.termux/files/usr/etc/')
 from style import display_banner, show_warning
 
 PASSWORD_FILE = "/data/data/com.termux/files/usr/etc/termux_password.hash"
