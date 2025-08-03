@@ -115,7 +115,11 @@ def main():
     else:
         if os.path.exists(PASSWORD_FILE):
             if check_password():
-                os.system('/data/data/com.termux/files/usr/bin/login')
+                # Exécuter le shell original après authentification réussie
+                os.system('/data/data/com.termux/files/usr/bin/login.real')
+        else:
+            # Si aucun mot de passe n'est configuré, passer directement au shell
+            os.system('/data/data/com.termux/files/usr/bin/login.real')
 
 if __name__ == "__main__":
     main()
