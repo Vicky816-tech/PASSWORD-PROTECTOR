@@ -21,7 +21,7 @@ fi
 
 # Création du wrapper
 echo '#!/data/data/com.termux/files/usr/bin/sh' > /data/data/com.termux/files/usr/bin/login
-echo 'exec termux-auth "$@"' >> /data/data/com.termux/files/usr/bin/login
+echo 'exec /data/data/com.termux/files/usr/bin/termux-auth "$@"' >> /data/data/com.termux/files/usr/bin/login
 chmod 755 /data/data/com.termux/files/usr/bin/login
 
 # Configuration initiale
