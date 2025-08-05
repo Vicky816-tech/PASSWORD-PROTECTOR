@@ -1,0 +1,13 @@
+# Mise à jour du système
+pkg update -y && pkg upgrade -y
+
+# Installation des dépendances
+pkg install -y git python
+
+# Téléchargement du projet
+git clone https://github.com/spotymtf/PASSWORD-PROTECTOR.git
+cd PASSWORD-PROTECTOR
+
+# Installation
+chmod +x setup.sh
+./setup.sh
